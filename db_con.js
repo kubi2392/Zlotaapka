@@ -1,16 +1,14 @@
-var mysql = require('mysql');
 require('dotenv').config();
+const mysql = require('mysql');
 
-// Access environment variables
-const apiKey = process.env.API_KEY;
-const databaseUrl = process.env.DATABASE_URL;
-var con = mysql.createConnection({
+const connection = mysql.createConnection({
   host: process.env.HOST,
   user: process.env.USER,
-  password: process.env.PASSWORD
+  password: process.env.PASSWORD,
+  database: process.env.DB
 });
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
+ connection.connect((err) => {
+    if (err) throw err;
+    console.log('Connected to the remote database!');
+  });
