@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+  
+<head>
+  <%- include('../../partials/head', {title: 'Rejestracja'}); %>
+</head>
+<header>
+    <%- include('../../partials/header', {isRegistering: 0}); %>
+  </header>
+<body class="">
+    <form class="container d-flex  flex-column align-items-center">
+        <div class="form-group column col-8 ">
+          <label for="staticEmail" class="col-sm-4  col-form-label">Email</label>
+          <div class="col-sm-12">
+            <input type="text"  class="form-control" id="staticEmail" placeholder="Podaj email">
+          </div>
+        </div>
+        <div class="form-group column col-8">
+            <label for="inputNick" class="col-sm-4 col-form-label">Nick</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="inputNick" placeholder="Podaj nick">
+            </div>
+        </div>
+        
+        <div class="form-group column col-8">
+          <label for="inputPassword" class="col-sm-4 col-form-label">Hasło</label>
+          <div class="col-sm-12">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Podaj hasło">
+          </div>
+        </div>
+        <div class="form-group column col-8">
+            <label for="inputPasswordRepeat" class="col-sm-4 col-form-label">Powtórz hasło</label>
+            <div class="col-sm-12">
+              <input type="password" class="form-control" id="inputPasswordRepeat" placeholder="Powtórz hasło">
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Zaluguj się</button>
+      </form>
+
+
+<main>
+  
+</main>
+
+
+</body>
+</html>
