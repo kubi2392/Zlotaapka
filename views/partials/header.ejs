@@ -1,12 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <em>Variant: <%= typeof variant != 'undefined' ? variant : 'default' %></em>
-    <a class="navbar-brand" href="/">EJS Is Fun</a>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-    </ul>
+<style>
+  nav{
+    border-radius: 0 0 5px 5px;
+  }
+</style>
+<nav class="navbar navbar-expand-lg bg-secondary ml-4 mr-4 ">
+        <a class="navbar-brand text-light" href="/">Navbar</a>
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link text-light" href="/"><i class="bi bi-house-door-fill  "></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/about">About</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/">Zarejestruj się</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/"><i class="bi bi-box-arrow-in-right"></i></a>
+          </li>
+        </ul>
+
   </nav>
