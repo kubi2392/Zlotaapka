@@ -2,47 +2,57 @@
 <!DOCTYPE html>
 <html lang="pl">
   
+
+    
+  
+  
 <head>
+  
   <%- include('../../partials/head', {title: 'Rejestracja'}); %>
 </head>
-<header>
-    <%- include('../../partials/header', {isRegistering: 0}); %>
-  </header>
+
 <body class="">
-    <form class="container d-flex  flex-column align-items-center">
-        <div class="form-group column col-8 ">
-          <label for="staticEmail" class="col-sm-4  col-form-label">Email</label>
-          <div class="col-sm-12">
-            <input type="text"  class="form-control" id="staticEmail" placeholder="Podaj email">
-          </div>
-        </div>
-        <div class="form-group column col-8">
-            <label for="inputNick" class="col-sm-4 col-form-label">Nick</label>
-            <div class="col-sm-12">
-              <input type="text" class="form-control" id="inputNick" placeholder="Podaj nick">
-            </div>
+  <header>
+    <%- include('../../partials/header', {isLogging: 2}); %><!--isLogging: 0 no login state isLogging: 1 logging in isLogging: 2 reggistering-->
+  </header>
+  <form class="container d-flex flex-column align-items-center card p-4 mt-5">
+    <h3 class="card-title mt-3">Rejestracja</h3>
+    <div class="form-group column col-11 card-text">
+    <label for="staticEmail" class="col-sm-4  col-form-label">Email</label>
+      <div class="col-sm-12">
+        <input type="text"  class="form-control" id="staticEmail" placeholder="Podaj email">
+      </div>
+    </div>  
+    <div class="form-group column col-11 card-text">
+      <label for="inputNick" class="col-sm-4 col-form-label">Nick</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" id="inputNick" placeholder="Podaj nick">
+      </div>
+      </div>
+        
+      <div class="form-group column col-11 card-text">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Hasło</label>
+        <div class="col-sm-12 d-flex align-items-center">
+          <input type="password" class="form-control col-11" id="inputPassword" placeholder="Podaj hasło">
+          <button class="btn col-1 text-dark " type="button" ><i class="bi bi-eye "></i></button>
         </div>
         
-        <div class="form-group column col-8">
-          <label for="inputPassword" class="col-sm-4 col-form-label">Hasło</label>
-          <div class="col-sm-12">
-            <input type="password" class="form-control" id="inputPassword" placeholder="Podaj hasło">
-          </div>
+      </div>
+      <div class="form-group column col-11 card-text">
+        <label for="inputPasswordRepeat" class="col-sm-4 col-form-label">Powtórz hasło</label>
+        <div class="col-sm-12">
+          <input type="password" class="form-control" id="inputPasswordRepeat" placeholder="Powtórz hasło">
         </div>
-        <div class="form-group column col-8">
-            <label for="inputPasswordRepeat" class="col-sm-4 col-form-label">Powtórz hasło</label>
-            <div class="col-sm-12">
-              <input type="password" class="form-control" id="inputPasswordRepeat" placeholder="Powtórz hasło">
-            </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Zaluguj się</button>
-      </form>
+      </div>
+      <button class="btn btn-primary shadow-none" type="submit">Zarejestruj się</button>
+    </form>
 
 
 <main>
   
 </main>
-
+<%- include('../../partials/footer'); %><!--importing footer-->
 
 </body>
+
 </html>
